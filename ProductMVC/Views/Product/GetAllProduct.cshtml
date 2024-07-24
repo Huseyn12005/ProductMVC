@@ -1,0 +1,19 @@
+﻿@model List<Product>
+
+<h2>All Products</h2>
+
+
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>@item.Id</li>
+        <li>@item.Name</li>
+        <li>@item.Price</li>
+        <li>
+            @Html.ActionLink("Details", "GetProductById", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "DeleteProductById", new { id = item.Id })
+        </li>
+    </ul>
+}
+

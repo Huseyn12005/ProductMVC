@@ -1,0 +1,22 @@
+﻿@model ProductMVC.Models.Product
+
+<h2>Product Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <ul>
+        <il>ID</il>
+        <il>@Model.Id</il>
+
+        <il>Name</il>
+        <il>@Model.Name</il>
+
+        <il>Price</il>
+        <il>@Model.Price</il>
+    </ul>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "GetAllProduct")
+</p>
+
