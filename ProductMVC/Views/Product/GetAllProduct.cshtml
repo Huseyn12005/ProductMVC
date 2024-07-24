@@ -11,7 +11,7 @@
         <li>@item.Name</li>
         <li>@item.Price</li>
         <li>
-            @Html.ActionLink("Details", "GetProductById", new { id = item.Id }) |
+            @Html.ActionLink("Get", "GetProductById", new { id = item.Id }) |
             @Html.ActionLink("Delete", "DeleteProductById", new { id = item.Id })
         </li>
     </ul>
